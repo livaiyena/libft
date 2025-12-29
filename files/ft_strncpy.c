@@ -1,6 +1,6 @@
 #include "libft.h"
 
-char	*ft_strncpy(char *dest, char *src, unsigned int n)
+char	*ft_strncpy(char *dest, const char *src, unsigned int n)
 {
 	char	*dest_start;
 	if (!dest || !src)
