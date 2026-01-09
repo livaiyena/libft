@@ -6,7 +6,7 @@
 /*   By: kapaydin <kapaydin@student.42istanbul.com. +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 09:47:55 by kapaydin          #+#    #+#             */
-/*   Updated: 2026/01/09 09:52:50 by kapaydin         ###   ########.fr       */
+/*   Updated: 2026/01/09 12:54:55 by kapaydin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ t_list	*ft_lstnew(void *content)
 {
 	t_list	*ptr;
 
+	if (!content)
+		return (NULL);	
 	ptr = malloc(sizeof(t_list));
 	if (ptr)
 	{

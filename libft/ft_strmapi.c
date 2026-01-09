@@ -6,13 +6,13 @@
 /*   By: kapaydin <kapaydin@student.42istanbul.com. +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 09:48:29 by kapaydin          #+#    #+#             */
-/*   Updated: 2026/01/09 09:48:31 by kapaydin         ###   ########.fr       */
+/*   Updated: 2026/01/09 10:05:14 by kapaydin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 {
 	char			*res;
 	unsigned int	i;

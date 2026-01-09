@@ -6,7 +6,7 @@
 /*   By: kapaydin <kapaydin@student.42istanbul.com. +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 09:47:50 by kapaydin          #+#    #+#             */
-/*   Updated: 2026/01/09 09:47:51 by kapaydin         ###   ########.fr       */
+/*   Updated: 2026/01/09 12:50:44 by kapaydin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
+	if (!lst || !*lst || !new)
+		return ;
 	new->next = *lst;
 	*lst = new;
 }

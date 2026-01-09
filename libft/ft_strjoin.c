@@ -6,13 +6,13 @@
 /*   By: kapaydin <kapaydin@student.42istanbul.com. +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 09:48:23 by kapaydin          #+#    #+#             */
-/*   Updated: 2026/01/09 09:48:24 by kapaydin         ###   ########.fr       */
+/*   Updated: 2026/01/09 10:04:07 by kapaydin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(const char *s1, const char *s2)
 {
 	char	*str;
 	size_t	i;

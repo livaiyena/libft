@@ -6,7 +6,7 @@
 /*   By: kapaydin <kapaydin@student.42istanbul.com. +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 09:47:35 by kapaydin          #+#    #+#             */
-/*   Updated: 2026/01/09 09:47:36 by kapaydin         ###   ########.fr       */
+/*   Updated: 2026/01/09 12:26:28 by kapaydin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ char	*ft_itoa(int n)
 		str[0] = '-';
 		nbr = -nbr;
 	}
-	while (nbr != 0)
+	while (nbr > 0)
 	{
 		str[--len] = (nbr % 10) + '0';
 		nbr /= 10;

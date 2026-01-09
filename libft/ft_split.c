@@ -6,13 +6,13 @@
 /*   By: kapaydin <kapaydin@student.42istanbul.com. +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 09:56:01 by kapaydin          #+#    #+#             */
-/*   Updated: 2026/01/09 09:56:32 by kapaydin         ###   ########.fr       */
+/*   Updated: 2026/01/09 14:37:24 by kapaydin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t	count_words(char const *s, char c)
+static size_t	count_words(const char *s, char c)
 {
 	size_t	count;
 
@@ -37,7 +37,7 @@ static char	**free_all(char **tab, size_t i)
 	return (NULL);
 }
 
-char	**ft_split(char const *s, char c)
+char	**ft_split(const char *s, char c)
 {
 	char	**tab;
 	size_t	i;
