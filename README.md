@@ -40,7 +40,7 @@ To use Libft in your own project, include the header file in your source code an
 2. Link the library:
 
 ```bash
-cc main.c -L. -lft -o example_program
+cc main.c -L ./path-to-libft-folder -lft -o example_program
 
 ```
 
