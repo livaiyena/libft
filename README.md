@@ -1,6 +1,6 @@
 *This project has been created as part of the 42 curriculum by kapaydin*
 
-#Libft
+# Libft
 
 ## Description
 Libft is a foundational project at 42 school that involves re-coding standart c library funtions along with additional utility functions.
