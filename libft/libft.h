@@ -6,7 +6,7 @@
 /*   By: kapaydin <kapaydin@student.42istanbul.com. +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 09:51:28 by kapaydin          #+#    #+#             */
-/*   Updated: 2026/01/09 10:22:41 by kapaydin         ###   ########.fr       */
+/*   Updated: 2026/01/09 15:19:05 by kapaydin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,6 +69,7 @@ void	ft_putnbr_fd(int n, int fd);
 
 t_list	*ft_lstnew(void *content);
 t_list	*ft_lstlast(t_list *lst);
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
 int		ft_lstsize(t_list *lst);
 
@@ -77,4 +78,5 @@ void	ft_lstadd_front(t_list **lst, t_list *new);
 void	ft_lstdelone(t_list *lst, void (*del)(void*));
 void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
+
 #endif

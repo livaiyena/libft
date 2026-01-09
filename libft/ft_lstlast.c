@@ -6,7 +6,7 @@
 /*   By: kapaydin <kapaydin@student.42istanbul.com. +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 09:47:53 by kapaydin          #+#    #+#             */
-/*   Updated: 2026/01/09 12:37:30 by kapaydin         ###   ########.fr       */
+/*   Updated: 2026/01/09 16:09:42 by kapaydin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,11 @@
 
 t_list	*ft_lstlast(t_list *lst)
 {
-	if (!lst)
-		return (NULL);
-	while (lst->next)
-		lst++;
-	return (lst);
+	while (lst)
+	{
+		if (!(lst->next))
+			return (lst);
+		lst = lst->next;
+	}
+	return (NULL);
 }
