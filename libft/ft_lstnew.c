@@ -1,20 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kapaydin <kapaydin@student.42istanbul.com. +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/09 09:48:43 by kapaydin          #+#    #+#             */
-/*   Updated: 2026/01/09 09:48:44 by kapaydin         ###   ########.fr       */
+/*   Created: 2026/01/09 09:47:55 by kapaydin          #+#    #+#             */
+/*   Updated: 2026/01/09 09:52:50 by kapaydin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_tolower(int c)
+t_list	*ft_lstnew(void *content)
 {
-	if (ft_isupper(c))
-		return (c + 32);
-	return (c);
+	t_list	*ptr;
+
+	ptr = malloc(sizeof(t_list));
+	if (ptr)
+	{
+		ptr->content = content;
+		ptr->next = NULL;
+		return (ptr);
+	}
+	return (NULL);
 }

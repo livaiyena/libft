@@ -1,20 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kapaydin <kapaydin@student.42istanbul.com. +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/09 09:48:43 by kapaydin          #+#    #+#             */
-/*   Updated: 2026/01/09 09:48:44 by kapaydin         ###   ########.fr       */
+/*   Created: 2026/01/09 09:47:50 by kapaydin          #+#    #+#             */
+/*   Updated: 2026/01/09 09:47:51 by kapaydin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_tolower(int c)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	if (ft_isupper(c))
-		return (c + 32);
-	return (c);
+	new->next = *lst;
+	*lst = new;
 }
